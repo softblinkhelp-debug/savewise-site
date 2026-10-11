@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087f4f">
+  <meta name="description" content="A privacy-first guide to saving social media content using official download options and creator-authorized methods.">
+  <meta property="og:title" content="SaveWise — Social Media Save Guide">
+  <meta property="og:description" content="Find official ways to save content you own or have permission to download.">
+  <meta property="og:type" content="website">
+  <title>SaveWise — Social Media Save Guide</title>
+  <link rel="canonical" href="https://YOUR-PROJECT.pages.dev/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="SaveWise home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 6v19m-8-8 8 8 8-8M8 28v5h24v-5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>Save<span class="brand-accent">Wise</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#how">How it works</a><a href="#platforms">Platforms</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="header-cta" href="#save">Check a link <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> PRIVATE BY DESIGN · NO ACCOUNT NEEDED</div>
+        <h1>Save content.<br><span>Respect creators.</span></h1>
+        <p class="hero-copy">A simple guide to saving videos and photos you own or have permission to download — using official options wherever available.</p>
+        <form class="link-form" id="link-form" novalidate>
+          <label class="sr-only" for="media-url">Paste a public social media URL</label>
+          <span class="link-icon" aria-hidden="true">↗</span>
+          <input id="media-url" name="url" type="url" inputmode="url" placeholder="Paste a social media link…" autocomplete="url" required>
+          <button type="submit">Check link <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="form-note"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 13 3v4c0 3.2-2 5.6-5 7.5C5 12.6 3 10.2 3 7V3l5-1.5Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m5.5 7.5 1.6 1.6 3.5-3.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> Links are checked in your browser. This starter site does not upload or store them.</p>
+        <div id="result" class="result-panel" role="status" aria-live="polite" hidden></div>
+        <div class="platform-pills" aria-label="Supported platforms">
+          <span><b class="platform-dot instagram"></b> Instagram</span><span><b class="platform-dot tiktok"></b> TikTok</span><span><b class="platform-dot facebook"></b> Facebook</span><span><b class="platform-dot youtube"></b> YouTube</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-glow"></div>
+        <div class="floating-card card-photo"><div class="photo-scene"><span class="sun"></span><span class="hill hill-a"></span><span class="hill hill-b"></span></div><div class="card-caption"><span class="mini-avatar"></span><span><i></i><i></i></span><b>PHOTO</b></div></div>
+        <div class="floating-card card-video"><div class="video-scene"><span class="play"></span></div><div class="card-caption"><span class="video-bars"></span><span><i></i><i></i></span><b>VIDEO</b></div></div>
+        <div class="download-token"><svg viewBox="0 0 64 64"><path d="M32 9v29m-12-12 12 12 12-12M12 43v9h40v-9" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Save with permission</span></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Privacy commitments">
+      <div><span class="trust-icon">✓</span><span><b>No account required</b><small>Use the guide without signing in</small></span></div>
+      <div><span class="trust-icon">⌁</span><span><b>Privacy-first</b><small>No link upload in this version</small></span></div>
+      <div><span class="trust-icon">♡</span><span><b>Creator-respecting</b><small>Save only when authorized</small></span></div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-heading"><span class="eyebrow">THREE SIMPLE STEPS</span><h2>How it works</h2><p>Use a link to find the platform’s supported saving route. Availability depends on the original service and content owner settings.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-number">01</div><div class="step-icon">↗</div><h3>Copy a link</h3><p>Copy the URL from the social platform where the content is published.</p></article>
+        <article class="step-card"><div class="step-number">02</div><div class="step-icon">◎</div><h3>Check the source</h3><p>We identify the platform locally and show relevant official options or guidance.</p></article>
+        <article class="step-card"><div class="step-number">03</div><div class="step-icon">↓</div><h3>Save appropriately</h3><p>Use built-in download tools or obtain the creator’s permission when needed.</p></article>
+      </div>
+    </section>
+
+    <section class="platform-section" id="platforms">
+      <div class="section-heading"><span class="eyebrow">SUPPORTED SOURCES</span><h2>One guide, four platforms</h2><p>We link to official help and creator tools, not third-party scraping services.</p></div>
+      <div class="platform-grid">
+        <article class="platform-card"><div class="platform-logo insta">◎</div><h3>Instagram</h3><p>Use in-app saving, available download features, or ask the creator for the original file.</p><a href="https://help.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram Help Center ↗</a></article>
+        <article class="platform-card"><div class="platform-logo tik">♪</div><h3>TikTok</h3><p>Use “Save video” when the creator has enabled it. If it is unavailable, respect that choice.</p><a href="https://support.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok Support ↗</a></article>
+        <article class="platform-card"><div class="platform-logo face">f</div><h3>Facebook</h3><p>Use Facebook’s available save features or obtain permission to download and reuse a file.</p><a href="https://www.facebook.com/help/" target="_blank" rel="noopener noreferrer">Facebook Help ↗</a></article>
+        <article class="platform-card"><div class="platform-logo you">▶</div><h3>YouTube</h3><p>For your own uploads, download through YouTube Studio. Other videos may have viewing-only options.</p><a href="https://support.google.com/youtube/answer/56100" target="_blank" rel="noopener noreferrer">Download your uploads ↗</a></article>
+      </div>
+    </section>
+
+    <section class="privacy-band">
+      <div class="privacy-symbol"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 52 13v16c0 13-8 22-20 29C20 51 12 42 12 29V13L32 6Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="m23 31 6 6 13-14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><span class="eyebrow">PRIVACY IS A FEATURE</span><h2>Your link stays on your device.</h2><p>This starter version validates the URL in your browser and does not send it to a server. No analytics, cookies, login, or tracking scripts are included.</p></div>
+      <a class="button button-light" href="privacy.html">Read privacy policy ↗</a>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading"><span class="eyebrow">GOOD TO KNOW</span><h2>Frequently asked questions</h2></div>
+      <div class="faq-list">
+        <details><summary>Does this site download every link directly?</summary><p>No. This starter version identifies supported domains and directs you to official saving options. It does not fetch media or bypass platform restrictions.</p></details>
+        <details><summary>Can I save any public video?</summary><p>Public visibility does not automatically grant download or reuse rights. Follow the platform’s terms and copyright law, and get permission where required.</p></details>
+        <details><summary>Is my link stored?</summary><p>This version checks the link locally in your browser. It does not send it to our application server or save it in local storage. Your hosting provider may process standard web request data when you visit the site.</p></details>
+        <details><summary>Can I download my own YouTube videos?</summary><p>YouTube provides a download option for your own uploaded videos through YouTube Studio, subject to its current requirements.</p></details>
+        <details><summary>Will this website be free?</summary><p>The code is free. Hosting is planned for Cloudflare Pages’ free plan, which is subject to Cloudflare’s current plan limits and terms. A custom domain is optional and usually costs money.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">↓</span><span>Save<span class="brand-accent">Wise</span></span></a><p>Independent utility guide. Not affiliated with Instagram, TikTok, Facebook, or YouTube.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></div><small>© <span id="year"></span> SaveWise. Use content responsibly.</small></footer>
+</body>
+</html>
