@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaveWise - Free Video Downloader</title>
+    <title>SaveWise - Universal Social Video Downloader</title>
     <!-- Google Fonts & FontAwesome -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -38,8 +38,8 @@
             gap: 10px;
         }
         .main-container {
-            max-width: 700px;
-            margin: 60px auto;
+            max-width: 750px;
+            margin: 50px auto;
             padding: 40px;
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(10px);
@@ -49,14 +49,33 @@
             text-align: center;
         }
         h1 {
-            font-size: 36px;
+            font-size: 34px;
             margin-bottom: 10px;
             color: #f8fafc;
         }
         p.subtitle {
             color: #94a3b8;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             font-size: 15px;
+        }
+        .platforms {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        .platform-badge {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
         }
         .input-group {
             display: flex;
@@ -126,16 +145,23 @@
 <body>
 
     <header>
-        <div class="logo"><i class="fa-solid fa-download"></i> SaveWise</div>
+        <div class="logo"><i class="fa-solid fa-cloud-arrow-down"></i> SaveWise</div>
     </header>
 
     <div class="main-container">
-        <h1>YouTube Video Downloader</h1>
-        <p class="subtitle">Paste your video link below to download instantly in MP4 & MP3.</p>
+        <h1>Social & Website Video Downloader</h1>
+        <p class="subtitle">Download videos from Instagram, Facebook, TikTok, Twitter, and more.</p>
         
+        <div class="platforms">
+            <span class="platform-badge"><i class="fa-brands fa-instagram"></i> Instagram</span>
+            <span class="platform-badge"><i class="fa-brands fa-facebook"></i> Facebook</span>
+            <span class="platform-badge"><i class="fa-brands fa-tiktok"></i> TikTok</span>
+            <span class="platform-badge"><i class="fa-brands fa-twitter"></i> Twitter / X</span>
+        </div>
+
         <div class="input-group">
-            <input type="text" id="videoUrl" placeholder="Paste YouTube video link here...">
-            <button onclick="loadDownloader()">Generate Download</button>
+            <input type="text" id="videoUrl" placeholder="Paste video link here...">
+            <button onclick="loadDownloader()">Download Video</button>
         </div>
 
         <div class="widget-container" id="widgetBox">
@@ -157,10 +183,9 @@
                 return;
             }
 
-            // Encode the URL for the embed widget
             const encodedUrl = encodeURIComponent(urlInput);
             
-            // Render official downloader embed widget
+            // Universal downloader embed widget supporting multiple social platforms
             widgetBox.innerHTML = `
                 <iframe src="https://loader.to/api/button/?url=${encodedUrl}&color=38bdf8" scrolling="no"></iframe>
             `;
