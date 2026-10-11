@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-PROJECT.pages.dev/</loc></url>
-  <url><loc>https://YOUR-PROJECT.pages.dev/privacy.html</loc></url>
-  <url><loc>https://YOUR-PROJECT.pages.dev/terms.html</loc></url>
-  <url><loc>https://YOUR-PROJECT.pages.dev/contact.html</loc></url>
-</urlset>
+<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://YOUR-PRODUCTION-DOMAIN/</loc></url><url><loc>https://YOUR-PRODUCTION-DOMAIN/privacy.html</loc></url><url><loc>https://YOUR-PRODUCTION-DOMAIN/terms.html</loc></url><url><loc>https://YOUR-PRODUCTION-DOMAIN/contact.html</loc></url></urlset>
